@@ -2,12 +2,13 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import './custom.css';
 
-import SignUp from './containers/SignUp';
+import Login from './containers/Login';
+
 
 function APP() {
   return (
     <div className="App">
-    <SignUp />
+    <Login />
     </div>
      )
 }
