@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Axios from 'axios';
+import { Link } from 'react-router-dom';
 
 class SignUp extends Component {
     state = {
@@ -51,7 +52,7 @@ class SignUp extends Component {
         res.then(
               (res)=>{
                   if(res.data.status ===201){
-                    window.location.replace('https://www.youtube.com/watch?v=WZxIGmxRGXU')
+                    window.location.replace('/#/login')
                   }
               }
             ).catch(
@@ -76,7 +77,7 @@ class SignUp extends Component {
                 <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
                 <h3>Welcome</h3>
                 <p>Lets make the world a better place!</p>
-                <input type="submit" name="" value="Login"/><br/>
+                <Link to ={'/login/'} className="card-link login">Login</Link>
             </div>
             <div className="col-md-9 register-right">
 
