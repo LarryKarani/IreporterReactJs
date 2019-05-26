@@ -6,7 +6,8 @@ import NavBar from './components/NavBar'
 import Incidents from './containers/incidents';
 import SignUp from  './containers/SignUp'
 import Login from  './containers/Login'
-import { BrowserRouter as Router, Route, Switch , HashRouter } from 'react-router-dom';
+import IncidentDetails from './containers/incidentDetails'
+import {  Route, Switch , HashRouter } from 'react-router-dom';
 
 
 function APP() {
@@ -19,6 +20,7 @@ function APP() {
           <Route exact path="/" component={Login} />
           <Route  path="/signup" component={SignUp} />
           <Route  path="/login" component={Login} />
+          <Route path="/incidents/:id" component={IncidentDetails} />
         </Switch>
       </div>
     </HashRouter>

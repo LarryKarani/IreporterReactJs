@@ -11,6 +11,9 @@ const IncidentSummary = ({ incident }) => (
         </small>
       </div>
       <p className="card-text text-muted">{incident.comment}</p>
+      <div>
+        <a href={`/#/incidents/${incident.id}`} className="btn btn-primary btn-sm">View Incident</a>
+      </div>
     </div>
   </div>
 
