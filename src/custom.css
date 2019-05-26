@@ -96,3 +96,9 @@
 .invalid-feedback{
     display: block;
 }
+#details {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center;
+}
