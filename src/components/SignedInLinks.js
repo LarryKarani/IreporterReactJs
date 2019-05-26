@@ -19,6 +19,12 @@ class SignedInLinks extends Component {
             Incidents
           </NavLink>
         </li>
+
+        <li className="nav-item">
+          <NavLink className="nav-link" to="/create">
+            Create Incident
+          </NavLink>
+        </li>
       </ul>
     );
   }
