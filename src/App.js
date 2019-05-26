@@ -7,6 +7,7 @@ import Incidents from './containers/incidents';
 import SignUp from  './containers/SignUp'
 import Login from  './containers/Login'
 import IncidentDetails from './containers/incidentDetails'
+import Edit from './containers/Edit'
 import {  Route, Switch , HashRouter } from 'react-router-dom';
 
 
@@ -20,7 +21,8 @@ function APP() {
           <Route exact path="/" component={Login} />
           <Route  path="/signup" component={SignUp} />
           <Route  path="/login" component={Login} />
-          <Route path="/incidents/:id" component={IncidentDetails} />
+          <Route exact path="/incidents/:id" component={IncidentDetails} />
+          <Route path="/incidents/edit/:id" component={Edit} />
         </Switch>
       </div>
     </HashRouter>

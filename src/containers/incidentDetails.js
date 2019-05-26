@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import Axios from 'axios';
 import authHeader from '../helpers/authHeader';
+import { Link } from 'react-router-dom';
 const url = 'https://ireporter-version2.herokuapp.com/api/v2/interventions/';
 const config = {
   headers: authHeader(),
@@ -46,7 +47,7 @@ class IncidentDetails extends Component {
             <div className="card-body">
                 <h6 className="card-subtitle mb-2 text-muted">Created on: {moment(incident.createdon).calendar()}</h6>
                 <p className="card-text">{incident.comment}</p>
-                <a href="#" className="card-link">Edit</a>
+                <Link to ={`/incidents/edit/${incident.id}`} className="card-link">Edit</Link>
                 <a href="#" onClick={this.deleteRequest} className=" card-link text-danger">Delete</a>
             </div>
         </div>
