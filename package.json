@@ -21,13 +21,17 @@
   },
   "homepage": "https://github.com/larryTheGeek/IreporterReactJs#readme",
   "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
     "css": "^2.2.4",
     "css-loader": "^2.1.1",
     "express": "^4.17.0",
     "loader": "^2.1.1",
+    "moment": "^2.24.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
     "style-loader": "^0.23.1"
   },
   "devDependencies": {
