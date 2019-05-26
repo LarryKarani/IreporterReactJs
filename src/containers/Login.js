@@ -40,7 +40,9 @@ class Login extends Component {
         res.then(
               (res)=>{
                   if(res.data.status ===200){
-                    window.location.replace('https://www.youtube.com/watch?v=WZxIGmxRGXU')
+                    const user = res.data
+                    localStorage.setItem('user', JSON.stringify(user));
+                    window.location.replace('/#/incidents')
                   }
               }
             ).catch(
@@ -50,7 +52,6 @@ class Login extends Component {
                     ...this.state,
                     error:  error 
                 })
-                console.log(this.state)
               },
             );
           }
