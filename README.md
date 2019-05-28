@@ -26,7 +26,8 @@ __Instalation__
  
 __Heroku app__
 
-https://ireporter-frontend-app.herokuapp.com/
+https://ireporter-frontend-app.herokuapp.com
+
 __Owener__
 
 Larry Karani
