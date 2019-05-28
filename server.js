@@ -8,4 +8,3 @@ app.get('*', (req, res) => {
     res.sendFile(path.resolve('./src/index.html'))
 })
 app.listen(port);
-console.log('Server start')

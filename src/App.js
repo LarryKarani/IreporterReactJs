@@ -9,6 +9,7 @@ import Login from  './containers/Login'
 import IncidentDetails from './containers/incidentDetails'
 import Edit from './containers/Edit'
 import CreateIncident from './containers/createIncident'
+import Home from './containers/Home'
 import {  Route, Switch , HashRouter } from 'react-router-dom';
 
 
@@ -19,7 +20,7 @@ function APP() {
         <NavBar />
         <Switch>
           <Route exact path="/incidents" component={ Incidents} />
-          <Route exact path="/" component={SignUp} />
+          <Route exact path="/" component={Home} />
           <Route  path="/signup" component={SignUp} />
           <Route  path="/login" component={Login} />
           <Route exact path="/incidents/:id" component={IncidentDetails} />
